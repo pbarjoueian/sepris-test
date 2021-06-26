@@ -1,0 +1,1592 @@
+{
+	"info": {
+		"_postman_id": "749035ba-1562-4b46-aa2b-609eae8e24bc",
+		"name": "Sepris API",
+		"description": "Tnis is an evaluation test app\n\nContact Support:\n Email: p.barjoueian@gmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "token",
+					"item": [
+						{
+							"name": "account token create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"qui quis enim id deserunt\",\n    \"password\": \"eiusmod tempor\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/account/token/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"account",
+										"token",
+										""
+									]
+								},
+								"description": "Takes a set of user credentials and returns an access and refresh JSON web\ntoken pair to prove the authentication of those credentials."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\": \"qui quis enim id deserunt\",\n    \"password\": \"eiusmod tempor\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/account/token/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"account",
+												"token",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"username\": \"qui quis enim id deserunt\",\n \"password\": \"eiusmod tempor\"\n}"
+								}
+							]
+						},
+						{
+							"name": "account token refresh create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"refresh\": \"commodo qui enim\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/account/token/refresh/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"account",
+										"token",
+										"refresh",
+										""
+									]
+								},
+								"description": "Takes a refresh type JSON web token and returns an access type JSON web\ntoken if the refresh token is valid."
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"refresh\": \"commodo qui enim\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/account/token/refresh/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"account",
+												"token",
+												"refresh",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"refresh\": \"commodo qui enim\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "account register create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"2\",\n    \"password\": \"eiusmod laborum in dolore\",\n    \"first_name\": \"labore do enim exercitation\",\n    \"last_name\": \"dolor non tempor incididunt\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/account/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"2\",\n    \"password\": \"eiusmod laborum in dolore\",\n    \"first_name\": \"labore do enim exercitation\",\n    \"last_name\": \"dolor non tempor incididunt\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/account/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"username\": \"A1rR2pH\",\n \"password\": \"non consectetur ut Ut\",\n \"id\": 53118345,\n \"first_name\": \"elit ipsum in veniam\",\n \"last_name\": \"dolore qui culpa consectetur exercitation\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "author read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/author/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this author."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/author/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"author",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"first_name\": \"elit tempor\",\n \"last_name\": \"sed ullamco labore\",\n \"id\": -99314818,\n \"nick_name\": \"sed minim sint\",\n \"created_by\": -11823708,\n \"created_at\": \"1957-01-28T23:13:56.648Z\",\n \"updated_at\": \"1983-05-20T03:32:10.227Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "author update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"aliqua veniam anim nostrud \",\n    \"last_name\": \"ut\",\n    \"nick_name\": \"aute exercitation dolore\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/author/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this author."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/author/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"author",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"first_name\": \"elit tempor\",\n \"last_name\": \"sed ullamco labore\",\n \"id\": -99314818,\n \"nick_name\": \"sed minim sint\",\n \"created_by\": -11823708,\n \"created_at\": \"1957-01-28T23:13:56.648Z\",\n \"updated_at\": \"1983-05-20T03:32:10.227Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "author partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"aliqua veniam anim nostrud \",\n    \"last_name\": \"ut\",\n    \"nick_name\": \"aute exercitation dolore\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/author/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this author."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/author/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"author",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"first_name\": \"elit tempor\",\n \"last_name\": \"sed ullamco labore\",\n \"id\": -99314818,\n \"nick_name\": \"sed minim sint\",\n \"created_by\": -11823708,\n \"created_at\": \"1957-01-28T23:13:56.648Z\",\n \"updated_at\": \"1983-05-20T03:32:10.227Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "author delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/author/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this author."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/author/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"author",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "author list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/author/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/author/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"first_name\": \"ullamco ut veniam\",\n  \"last_name\": \"irure\",\n  \"id\": 72935902,\n  \"nick_name\": \"consectetur incididunt ullamco\",\n  \"created_by\": -68255666,\n  \"created_at\": \"1990-11-23T20:54:11.071Z\",\n  \"updated_at\": \"1948-01-08T18:21:16.108Z\"\n },\n {\n  \"first_name\": \"est\",\n  \"last_name\": \"et consectetur adipisicing\",\n  \"id\": -21310544,\n  \"nick_name\": \"am\",\n  \"created_by\": -67622433,\n  \"created_at\": \"1989-08-29T12:45:56.843Z\",\n  \"updated_at\": \"2002-09-19T08:07:49.342Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "author create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"aliqua veniam anim nostrud \",\n    \"last_name\": \"ut\",\n    \"nick_name\": \"aute exercitation dolore\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/author/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"author",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/author/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"author",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"first_name\": \"elit tempor\",\n \"last_name\": \"sed ullamco labore\",\n \"id\": -99314818,\n \"nick_name\": \"sed minim sint\",\n \"created_by\": -11823708,\n \"created_at\": \"1957-01-28T23:13:56.648Z\",\n \"updated_at\": \"1983-05-20T03:32:10.227Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "book read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/book/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this book."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/book/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"book",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"officia occaecat aliquip cillum\",\n \"author\": [\n  {\n   \"first_name\": \"o\",\n   \"last_name\": \"Excepteur voluptate ea\",\n   \"id\": 27544339,\n   \"nick_name\": \"ad laboris sed\",\n   \"created_by\": -48802307,\n   \"created_at\": \"1991-10-17T03:49:54.330Z\",\n   \"updated_at\": \"2019-09-07T22:53:07.115Z\"\n  },\n  {\n   \"first_name\": \"consectetur exercitation occaecat in\",\n   \"last_name\": \"nulla sunt\",\n   \"id\": 82181065,\n   \"nick_name\": \"labore mollit consequa\",\n   \"created_by\": 5357891,\n   \"created_at\": \"1972-04-06T05:35:02.498Z\",\n   \"updated_at\": \"1969-10-25T16:31:36.507Z\"\n  }\n ],\n \"id\": 11937815,\n \"page_number\": -522070491,\n \"publication_year\": 382294534,\n \"published_by\": {\n  \"name\": \"in ut\",\n  \"phone_number\": \"cillum culpa\",\n  \"address\": \"occaecat minim\",\n  \"id\": 55658348,\n  \"created_by\": 66627291,\n  \"created_at\": \"2009-07-03T09:47:54.620Z\",\n  \"updated_at\": \"1989-10-05T10:58:25.110Z\"\n },\n \"created_by\": -6657638,\n \"created_at\": \"1967-08-17T04:55:49.105Z\",\n \"updated_at\": \"1953-02-25T20:21:16.256Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "book update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Ut ad\",\n    \"author\": [\n        {\n            \"first_name\": \"proident incidi\",\n            \"last_name\": \"volupt\",\n            \"id\": -32057397,\n            \"nick_name\": \"proident voluptate\",\n            \"created_by\": -44441192,\n            \"created_at\": \"2019-06-09T01:49:51.789Z\",\n            \"updated_at\": \"1944-08-28T14:37:45.809Z\"\n        },\n        {\n            \"first_name\": \"in aute exercitation ad\",\n            \"last_name\": \"in\",\n            \"id\": -24269634,\n            \"nick_name\": \"aute culpa\",\n            \"created_by\": -4547930,\n            \"created_at\": \"1959-12-23T11:45:52.541Z\",\n            \"updated_at\": \"1995-08-20T04:25:12.753Z\"\n        }\n    ],\n    \"page_number\": 460056444,\n    \"publication_year\": -1079743736,\n    \"published_by\": {\n        \"name\": \"do lab\",\n        \"phone_number\": \"quis enim labore\",\n        \"address\": \"ad et e\",\n        \"id\": 46571715,\n        \"created_by\": -87137756,\n        \"created_at\": \"1994-12-11T14:09:31.075Z\",\n        \"updated_at\": \"1950-01-21T20:24:32.529Z\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/book/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this book."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/book/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"book",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"officia occaecat aliquip cillum\",\n \"author\": [\n  {\n   \"first_name\": \"o\",\n   \"last_name\": \"Excepteur voluptate ea\",\n   \"id\": 27544339,\n   \"nick_name\": \"ad laboris sed\",\n   \"created_by\": -48802307,\n   \"created_at\": \"1991-10-17T03:49:54.330Z\",\n   \"updated_at\": \"2019-09-07T22:53:07.115Z\"\n  },\n  {\n   \"first_name\": \"consectetur exercitation occaecat in\",\n   \"last_name\": \"nulla sunt\",\n   \"id\": 82181065,\n   \"nick_name\": \"labore mollit consequa\",\n   \"created_by\": 5357891,\n   \"created_at\": \"1972-04-06T05:35:02.498Z\",\n   \"updated_at\": \"1969-10-25T16:31:36.507Z\"\n  }\n ],\n \"id\": 11937815,\n \"page_number\": -522070491,\n \"publication_year\": 382294534,\n \"published_by\": {\n  \"name\": \"in ut\",\n  \"phone_number\": \"cillum culpa\",\n  \"address\": \"occaecat minim\",\n  \"id\": 55658348,\n  \"created_by\": 66627291,\n  \"created_at\": \"2009-07-03T09:47:54.620Z\",\n  \"updated_at\": \"1989-10-05T10:58:25.110Z\"\n },\n \"created_by\": -6657638,\n \"created_at\": \"1967-08-17T04:55:49.105Z\",\n \"updated_at\": \"1953-02-25T20:21:16.256Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "book partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Ut ad\",\n    \"author\": [\n        {\n            \"first_name\": \"proident incidi\",\n            \"last_name\": \"volupt\",\n            \"id\": -32057397,\n            \"nick_name\": \"proident voluptate\",\n            \"created_by\": -44441192,\n            \"created_at\": \"2019-06-09T01:49:51.789Z\",\n            \"updated_at\": \"1944-08-28T14:37:45.809Z\"\n        },\n        {\n            \"first_name\": \"in aute exercitation ad\",\n            \"last_name\": \"in\",\n            \"id\": -24269634,\n            \"nick_name\": \"aute culpa\",\n            \"created_by\": -4547930,\n            \"created_at\": \"1959-12-23T11:45:52.541Z\",\n            \"updated_at\": \"1995-08-20T04:25:12.753Z\"\n        }\n    ],\n    \"page_number\": 460056444,\n    \"publication_year\": -1079743736,\n    \"published_by\": {\n        \"name\": \"do lab\",\n        \"phone_number\": \"quis enim labore\",\n        \"address\": \"ad et e\",\n        \"id\": 46571715,\n        \"created_by\": -87137756,\n        \"created_at\": \"1994-12-11T14:09:31.075Z\",\n        \"updated_at\": \"1950-01-21T20:24:32.529Z\"\n    }\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/book/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this book."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/book/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"book",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"officia occaecat aliquip cillum\",\n \"author\": [\n  {\n   \"first_name\": \"o\",\n   \"last_name\": \"Excepteur voluptate ea\",\n   \"id\": 27544339,\n   \"nick_name\": \"ad laboris sed\",\n   \"created_by\": -48802307,\n   \"created_at\": \"1991-10-17T03:49:54.330Z\",\n   \"updated_at\": \"2019-09-07T22:53:07.115Z\"\n  },\n  {\n   \"first_name\": \"consectetur exercitation occaecat in\",\n   \"last_name\": \"nulla sunt\",\n   \"id\": 82181065,\n   \"nick_name\": \"labore mollit consequa\",\n   \"created_by\": 5357891,\n   \"created_at\": \"1972-04-06T05:35:02.498Z\",\n   \"updated_at\": \"1969-10-25T16:31:36.507Z\"\n  }\n ],\n \"id\": 11937815,\n \"page_number\": -522070491,\n \"publication_year\": 382294534,\n \"published_by\": {\n  \"name\": \"in ut\",\n  \"phone_number\": \"cillum culpa\",\n  \"address\": \"occaecat minim\",\n  \"id\": 55658348,\n  \"created_by\": 66627291,\n  \"created_at\": \"2009-07-03T09:47:54.620Z\",\n  \"updated_at\": \"1989-10-05T10:58:25.110Z\"\n },\n \"created_by\": -6657638,\n \"created_at\": \"1967-08-17T04:55:49.105Z\",\n \"updated_at\": \"1953-02-25T20:21:16.256Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "book delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/book/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this book."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/book/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"book",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "book list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/book/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/book/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"title\": \"minim aliqua dolore ullamco labore\",\n  \"author\": [\n   {\n    \"first_name\": \"consectetur veniam voluptate nulla\",\n    \"last_name\": \"officia est\",\n    \"id\": -76044371,\n    \"nick_name\": \"nulla Ut eli\",\n    \"created_by\": -79293369,\n    \"created_at\": \"1986-07-23T19:49:45.009Z\",\n    \"updated_at\": \"1944-11-06T10:36:02.496Z\"\n   },\n   {\n    \"first_name\": \"proident ullamco\",\n    \"last_name\": \"in\",\n    \"id\": -66488976,\n    \"nick_name\": \"sunt Excepteur voluptate aute\",\n    \"created_by\": 50044861,\n    \"created_at\": \"2004-08-19T06:56:44.920Z\",\n    \"updated_at\": \"1944-06-14T17:17:31.020Z\"\n   }\n  ],\n  \"id\": -20055062,\n  \"page_number\": 1324115079,\n  \"publication_year\": 1060869669,\n  \"published_by\": {\n   \"name\": \"ipsum\",\n   \"phone_number\": \"sunt Duis laborum\",\n   \"address\": \"reprehenderit ullamco\",\n   \"id\": 88842829,\n   \"created_by\": -77733475,\n   \"created_at\": \"1947-02-06T13:59:37.441Z\",\n   \"updated_at\": \"2010-06-28T04:23:09.671Z\"\n  },\n  \"created_by\": 62257653,\n  \"created_at\": \"1951-05-12T10:43:51.907Z\",\n  \"updated_at\": \"2018-05-14T17:37:30.586Z\"\n },\n {\n  \"title\": \"Ut in\",\n  \"author\": [\n   {\n    \"first_name\": \"labore nisi\",\n    \"last_name\": \"id consectetur in tempor minim\",\n    \"id\": 45017349,\n    \"nick_name\": \"nulla dolore quis Excepteur\",\n    \"created_by\": -33743465,\n    \"created_at\": \"1942-03-21T16:20:26.400Z\",\n    \"updated_at\": \"1969-02-16T12:25:42.036Z\"\n   },\n   {\n    \"first_name\": \"ea \",\n    \"last_name\": \"nulla eu dolore anim\",\n    \"id\": 47761161,\n    \"nick_name\": \"Duis adipisici\",\n    \"created_by\": 57122737,\n    \"created_at\": \"1998-11-22T23:05:56.362Z\",\n    \"updated_at\": \"2020-09-10T17:52:08.931Z\"\n   }\n  ],\n  \"id\": -8290756,\n  \"page_number\": 1553913895,\n  \"publication_year\": 1626505369,\n  \"published_by\": {\n   \"name\": \"e\",\n   \"phone_number\": \"reprehenderit dolore\",\n   \"address\": \"adipisicing officia consecte\",\n   \"id\": 42139286,\n   \"created_by\": -64452091,\n   \"created_at\": \"1962-02-24T19:37:05.223Z\",\n   \"updated_at\": \"1965-05-21T13:11:28.256Z\"\n  },\n  \"created_by\": 50231413,\n  \"created_at\": \"1980-08-13T05:07:17.800Z\",\n  \"updated_at\": \"1946-07-11T12:50:08.770Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "book create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Ut ad\",\n    \"author\": [\n        {\n            \"first_name\": \"proident incidi\",\n            \"last_name\": \"volupt\",\n            \"id\": -32057397,\n            \"nick_name\": \"proident voluptate\",\n            \"created_by\": -44441192,\n            \"created_at\": \"2019-06-09T01:49:51.789Z\",\n            \"updated_at\": \"1944-08-28T14:37:45.809Z\"\n        },\n        {\n            \"first_name\": \"in aute exercitation ad\",\n            \"last_name\": \"in\",\n            \"id\": -24269634,\n            \"nick_name\": \"aute culpa\",\n            \"created_by\": -4547930,\n            \"created_at\": \"1959-12-23T11:45:52.541Z\",\n            \"updated_at\": \"1995-08-20T04:25:12.753Z\"\n        }\n    ],\n    \"page_number\": 460056444,\n    \"publication_year\": -1079743736,\n    \"published_by\": {\n        \"name\": \"do lab\",\n        \"phone_number\": \"quis enim labore\",\n        \"address\": \"ad et e\",\n        \"id\": 46571715,\n        \"created_by\": -87137756,\n        \"created_at\": \"1994-12-11T14:09:31.075Z\",\n        \"updated_at\": \"1950-01-21T20:24:32.529Z\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/book/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/book/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"title\": \"officia occaecat aliquip cillum\",\n \"author\": [\n  {\n   \"first_name\": \"o\",\n   \"last_name\": \"Excepteur voluptate ea\",\n   \"id\": 27544339,\n   \"nick_name\": \"ad laboris sed\",\n   \"created_by\": -48802307,\n   \"created_at\": \"1991-10-17T03:49:54.330Z\",\n   \"updated_at\": \"2019-09-07T22:53:07.115Z\"\n  },\n  {\n   \"first_name\": \"consectetur exercitation occaecat in\",\n   \"last_name\": \"nulla sunt\",\n   \"id\": 82181065,\n   \"nick_name\": \"labore mollit consequa\",\n   \"created_by\": 5357891,\n   \"created_at\": \"1972-04-06T05:35:02.498Z\",\n   \"updated_at\": \"1969-10-25T16:31:36.507Z\"\n  }\n ],\n \"id\": 11937815,\n \"page_number\": -522070491,\n \"publication_year\": 382294534,\n \"published_by\": {\n  \"name\": \"in ut\",\n  \"phone_number\": \"cillum culpa\",\n  \"address\": \"occaecat minim\",\n  \"id\": 55658348,\n  \"created_by\": 66627291,\n  \"created_at\": \"2009-07-03T09:47:54.620Z\",\n  \"updated_at\": \"1989-10-05T10:58:25.110Z\"\n },\n \"created_by\": -6657638,\n \"created_at\": \"1967-08-17T04:55:49.105Z\",\n \"updated_at\": \"1953-02-25T20:21:16.256Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "book get author books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/book/get_author_books/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								"get_author_books",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/book/get_author_books/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										"get_author_books",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"title\": \"minim aliqua dolore ullamco labore\",\n  \"author\": [\n   {\n    \"first_name\": \"consectetur veniam voluptate nulla\",\n    \"last_name\": \"officia est\",\n    \"id\": -76044371,\n    \"nick_name\": \"nulla Ut eli\",\n    \"created_by\": -79293369,\n    \"created_at\": \"1986-07-23T19:49:45.009Z\",\n    \"updated_at\": \"1944-11-06T10:36:02.496Z\"\n   },\n   {\n    \"first_name\": \"proident ullamco\",\n    \"last_name\": \"in\",\n    \"id\": -66488976,\n    \"nick_name\": \"sunt Excepteur voluptate aute\",\n    \"created_by\": 50044861,\n    \"created_at\": \"2004-08-19T06:56:44.920Z\",\n    \"updated_at\": \"1944-06-14T17:17:31.020Z\"\n   }\n  ],\n  \"id\": -20055062,\n  \"page_number\": 1324115079,\n  \"publication_year\": 1060869669,\n  \"published_by\": {\n   \"name\": \"ipsum\",\n   \"phone_number\": \"sunt Duis laborum\",\n   \"address\": \"reprehenderit ullamco\",\n   \"id\": 88842829,\n   \"created_by\": -77733475,\n   \"created_at\": \"1947-02-06T13:59:37.441Z\",\n   \"updated_at\": \"2010-06-28T04:23:09.671Z\"\n  },\n  \"created_by\": 62257653,\n  \"created_at\": \"1951-05-12T10:43:51.907Z\",\n  \"updated_at\": \"2018-05-14T17:37:30.586Z\"\n },\n {\n  \"title\": \"Ut in\",\n  \"author\": [\n   {\n    \"first_name\": \"labore nisi\",\n    \"last_name\": \"id consectetur in tempor minim\",\n    \"id\": 45017349,\n    \"nick_name\": \"nulla dolore quis Excepteur\",\n    \"created_by\": -33743465,\n    \"created_at\": \"1942-03-21T16:20:26.400Z\",\n    \"updated_at\": \"1969-02-16T12:25:42.036Z\"\n   },\n   {\n    \"first_name\": \"ea \",\n    \"last_name\": \"nulla eu dolore anim\",\n    \"id\": 47761161,\n    \"nick_name\": \"Duis adipisici\",\n    \"created_by\": 57122737,\n    \"created_at\": \"1998-11-22T23:05:56.362Z\",\n    \"updated_at\": \"2020-09-10T17:52:08.931Z\"\n   }\n  ],\n  \"id\": -8290756,\n  \"page_number\": 1553913895,\n  \"publication_year\": 1626505369,\n  \"published_by\": {\n   \"name\": \"e\",\n   \"phone_number\": \"reprehenderit dolore\",\n   \"address\": \"adipisicing officia consecte\",\n   \"id\": 42139286,\n   \"created_by\": -64452091,\n   \"created_at\": \"1962-02-24T19:37:05.223Z\",\n   \"updated_at\": \"1965-05-21T13:11:28.256Z\"\n  },\n  \"created_by\": 50231413,\n  \"created_at\": \"1980-08-13T05:07:17.800Z\",\n  \"updated_at\": \"1946-07-11T12:50:08.770Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "book get publisher books read",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/book/get_publisher_books/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"book",
+								"get_publisher_books",
+								""
+							]
+						},
+						"description": "[summary]"
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/book/get_publisher_books/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"book",
+										"get_publisher_books",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"title\": \"minim aliqua dolore ullamco labore\",\n  \"author\": [\n   {\n    \"first_name\": \"consectetur veniam voluptate nulla\",\n    \"last_name\": \"officia est\",\n    \"id\": -76044371,\n    \"nick_name\": \"nulla Ut eli\",\n    \"created_by\": -79293369,\n    \"created_at\": \"1986-07-23T19:49:45.009Z\",\n    \"updated_at\": \"1944-11-06T10:36:02.496Z\"\n   },\n   {\n    \"first_name\": \"proident ullamco\",\n    \"last_name\": \"in\",\n    \"id\": -66488976,\n    \"nick_name\": \"sunt Excepteur voluptate aute\",\n    \"created_by\": 50044861,\n    \"created_at\": \"2004-08-19T06:56:44.920Z\",\n    \"updated_at\": \"1944-06-14T17:17:31.020Z\"\n   }\n  ],\n  \"id\": -20055062,\n  \"page_number\": 1324115079,\n  \"publication_year\": 1060869669,\n  \"published_by\": {\n   \"name\": \"ipsum\",\n   \"phone_number\": \"sunt Duis laborum\",\n   \"address\": \"reprehenderit ullamco\",\n   \"id\": 88842829,\n   \"created_by\": -77733475,\n   \"created_at\": \"1947-02-06T13:59:37.441Z\",\n   \"updated_at\": \"2010-06-28T04:23:09.671Z\"\n  },\n  \"created_by\": 62257653,\n  \"created_at\": \"1951-05-12T10:43:51.907Z\",\n  \"updated_at\": \"2018-05-14T17:37:30.586Z\"\n },\n {\n  \"title\": \"Ut in\",\n  \"author\": [\n   {\n    \"first_name\": \"labore nisi\",\n    \"last_name\": \"id consectetur in tempor minim\",\n    \"id\": 45017349,\n    \"nick_name\": \"nulla dolore quis Excepteur\",\n    \"created_by\": -33743465,\n    \"created_at\": \"1942-03-21T16:20:26.400Z\",\n    \"updated_at\": \"1969-02-16T12:25:42.036Z\"\n   },\n   {\n    \"first_name\": \"ea \",\n    \"last_name\": \"nulla eu dolore anim\",\n    \"id\": 47761161,\n    \"nick_name\": \"Duis adipisici\",\n    \"created_by\": 57122737,\n    \"created_at\": \"1998-11-22T23:05:56.362Z\",\n    \"updated_at\": \"2020-09-10T17:52:08.931Z\"\n   }\n  ],\n  \"id\": -8290756,\n  \"page_number\": 1553913895,\n  \"publication_year\": 1626505369,\n  \"published_by\": {\n   \"name\": \"e\",\n   \"phone_number\": \"reprehenderit dolore\",\n   \"address\": \"adipisicing officia consecte\",\n   \"id\": 42139286,\n   \"created_by\": -64452091,\n   \"created_at\": \"1962-02-24T19:37:05.223Z\",\n   \"updated_at\": \"1965-05-21T13:11:28.256Z\"\n  },\n  \"created_by\": 50231413,\n  \"created_at\": \"1980-08-13T05:07:17.800Z\",\n  \"updated_at\": \"1946-07-11T12:50:08.770Z\"\n }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "publication",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "publication read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/publication/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this publicaition."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/publication/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"publication",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"name\": \"occaecat ad sed\",\n \"phone_number\": \"veniam fugiat \",\n \"address\": \"ad minim\",\n \"id\": -4014390,\n \"created_by\": -38900012,\n \"created_at\": \"2002-06-01T14:44:26.775Z\",\n \"updated_at\": \"1954-11-11T09:15:38.938Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "publication update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"aliqua nisi\",\n    \"phone_number\": \"id officia occaecat elit nulla\",\n    \"address\": \"labor\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/publication/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this publicaition."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/publication/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"publication",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"name\": \"occaecat ad sed\",\n \"phone_number\": \"veniam fugiat \",\n \"address\": \"ad minim\",\n \"id\": -4014390,\n \"created_by\": -38900012,\n \"created_at\": \"2002-06-01T14:44:26.775Z\",\n \"updated_at\": \"1954-11-11T09:15:38.938Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "publication partial update",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"aliqua nisi\",\n    \"phone_number\": \"id officia occaecat elit nulla\",\n    \"address\": \"labor\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/publication/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this publicaition."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/publication/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"publication",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"name\": \"occaecat ad sed\",\n \"phone_number\": \"veniam fugiat \",\n \"address\": \"ad minim\",\n \"id\": -4014390,\n \"created_by\": -38900012,\n \"created_at\": \"2002-06-01T14:44:26.775Z\",\n \"updated_at\": \"1954-11-11T09:15:38.938Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "publication delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/publication/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-49529664",
+											"description": "(Required) A unique integer value identifying this publicaition."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: basic",
+												"key": "Authorization",
+												"value": "Basic <credentials>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/publication/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"publication",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "publication list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/publication/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"publication",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/publication/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"name\": \"proident officia sunt\",\n  \"phone_number\": \"cup\",\n  \"address\": \"consectetur esse commodo cupidatat\",\n  \"id\": -70933122,\n  \"created_by\": 82048616,\n  \"created_at\": \"1991-10-10T22:52:22.810Z\",\n  \"updated_at\": \"1947-12-26T14:55:05.695Z\"\n },\n {\n  \"name\": \"do amet veniam\",\n  \"phone_number\": \"enim et\",\n  \"address\": \"sint ullamco aute in laborum\",\n  \"id\": -46067230,\n  \"created_by\": 21402962,\n  \"created_at\": \"1961-01-04T21:16:13.317Z\",\n  \"updated_at\": \"1986-05-16T10:15:23.902Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "publication create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"aliqua nisi\",\n    \"phone_number\": \"id officia occaecat elit nulla\",\n    \"address\": \"labor\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/publication/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"publication",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/publication/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"publication",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"name\": \"occaecat ad sed\",\n \"phone_number\": \"veniam fugiat \",\n \"address\": \"ad minim\",\n \"id\": -4014390,\n \"created_by\": -38900012,\n \"created_at\": \"2002-06-01T14:44:26.775Z\",\n \"updated_at\": \"1954-11-11T09:15:38.938Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "<Basic Auth Username>",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "<Basic Auth Password>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
